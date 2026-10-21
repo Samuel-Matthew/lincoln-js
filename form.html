@@ -4,12 +4,48 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+
+    <style>
+      .error {
+        color: red;
+        font-size: 14px;
+      }
+
+      #success{
+         color: green;
+        font-size: 14px;
+      }
+    </style>
   </head>
   <body>
-    <form id="myForm">
+    <form id="myForm" novalidate>
       <input type="text" id="name" placeholder="Enter your name" />
+      <p id="nameError" class="error"></p>
+      <br>
+      <br>
 
       <input type="email" id="email" placeholder="Enter your email" />
+      <p id="emailError" class="error"></p> 
+      <br>
+      <br>
+      <input type="text" id="age" placeholder="Enter your age" />
+      <p id="ageError" class="error"></p>
+      <br>
+      <br>
+
+      <input type="password" id="password" placeholder="Enter your Password" />
+      <p id="passwordError" class="error"></p>
+      <br>
+      <br>
+
+      <input type="password" id="confirmPassword" placeholder="Enter confirm password" />
+      <p id="confirmPasswordError" class="error"></p>
+      <br>
+      <br>
+
+      <p id="success"></p>
+
+
 
       <button type="submit">Submit</button>
     </form>
